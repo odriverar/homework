@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="" method="">
+        
+        <table style="width: 40%;">
+            <tbody>
+                <tr style="height: 30px;">
+                    <td><input type="text" name="dni" id="mi_dni" placeholder="Ingrese DNI" minlength="8" maxlength="8" style="width: 25%;" /></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td><input type="text" name="apellido_paterno" id="mi_apellido_paterno" placeholder="Ingrese su apellido paterno" style="width: 50%;" required /></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td><input type="text" name="apellido_materno" id="mi_apellido_materno" placeholder="Ingrese su apellido materno" style="width: 50%;" required /></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td><input type="text" name="nombres" id="mi_nombre" placeholder="Ingrese su nombre" style="width: 50%;" required /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Estado civil:</p>
+                        <input type="radio" name="estado_civil" /> Soltero(a)
+                        <input type="radio" name="estado_civil" /> Casado(a)
+                        <input type="radio" name="estado_civil" /> Viudo(a)
+                        <input type="radio" name="estado_civil" /> Divorsiado(a)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Sexo</p>
+                        <input type="radio" name="sexo" /> Hombre
+                        <input type="radio" name="sexo" /> Mujer
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Fecha de nacimiento</p>
+                        <input type="date" name="fecha_nacimiento" id="mi_fecha_nacimiento" required/>
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td><input type="number" name="edad" id="mi_edad" min="8" max="99" placeholder="Ingrese su edad" style="width: 18%;" required /></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td><input type="text" name="direccion" id="mi_direccion" placeholder="Ingrese su dirección" style="width: 70%;" required /></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td><input type="tel" name="telefono" id="mi_telefono" placeholder="Ingrese su numero telefonico" style="width: 50%;" required /></td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td><input type="email" name="email" id="mi_email" placeholder="Ingrese su correo electronico" style="width: 50%;" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Como se entero de nosotros</p>
+                        <input type="checkbox" name="interes[]" /> Prensa escrita
+                        <input type="checkbox" name="interes[]" /> Redes sociales
+                        <input type="checkbox" name="interes[]" /> Familiares y/o Amigos
+                        <input type="checkbox" name="interes[]" /> Afiches y/o volantes
+                        <input type="checkbox" name="interes[]" /> Internet
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td>
+                        <input type="submit" name="enviar" value="Enviar información">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
